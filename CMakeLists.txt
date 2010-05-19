@@ -1,3 +1,4 @@
+cmake_minimum_required(VERSION 2.6)
 #SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -ansi")
 #SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c99")
 #SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -pedantic")

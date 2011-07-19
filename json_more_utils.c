@@ -105,7 +105,7 @@ struct json_object* json_tokener_parse_len(const char *str, int len) {
   tok = json_tokener_new();
   obj = json_tokener_parse_ex(tok, str, len);
   if(tok->err != json_tokener_success) {
-    obj = error_ptr(-tok->err);
+    /*obj = error_ptr(-tok->err);*/
     json_tokener_free(tok);
 	mc_error("Malformed JSON object: \n'%.*s'\n", len, str);
 	 return 0;

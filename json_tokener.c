@@ -97,7 +97,8 @@ struct json_object* json_tokener_parse(const char *str)
   tok = json_tokener_new();
   obj = json_tokener_parse_ex(tok, str, -1);
   if(tok->err != json_tokener_success)
-    obj = error_ptr(-tok->err);
+    /* obj = error_ptr(-tok->err); /* I know here is a problem */
+	obj = 0;
   json_tokener_free(tok);
   return obj;
 }

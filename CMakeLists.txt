@@ -3,6 +3,8 @@ cmake_minimum_required(VERSION 2.6)
 #SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c99")
 #SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -pedantic")
 
+SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O2")
+
 SET(json-c_sources
 	arraylist.c
 	debug.c

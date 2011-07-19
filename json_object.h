@@ -308,7 +308,7 @@ extern struct json_object* json_object_new_string_len(const char *s, int len);
  * @param obj the json_object instance
  * @returns a string
  */
-extern char* json_object_get_string(struct json_object *obj);
+extern const char* json_object_get_string(struct json_object *obj);
 
 extern void json_set_float_format(const char*f);
 

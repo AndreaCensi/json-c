@@ -449,7 +449,7 @@ struct json_object* json_object_new_string_len(const char *s, int len)
   return this;
 }
 
-char* json_object_get_string(struct json_object *this)
+const char* json_object_get_string(struct json_object *this)
 {
   if(!this) return NULL;
   switch(this->o_type) {
